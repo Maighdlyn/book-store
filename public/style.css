@@ -1,4 +1,10 @@
 .row {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.navbar{
+  justify-content: space-between;
+  background-color: lightgray
 }
