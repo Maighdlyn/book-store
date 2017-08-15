@@ -1,9 +1,9 @@
-<%- include navbar.ejs %>
+<%- include partials/header.ejs %>
 
 <p>Book Store</p>
 
 <% books.forEach((book) => { %>
-  <div>
+  <div class="row">
     <p><%= book.title %></p>
     <p><%= book.author %></p>
     <p><%= book.genre %></p>
@@ -11,3 +11,5 @@
     <a href='/delete/<%= book.id %>'><button>delete</button></a>
   </div>
 <% })%>
+
+<%- include partials/footer.ejs %>

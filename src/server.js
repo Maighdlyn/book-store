@@ -5,6 +5,7 @@ const router = require('./server/routes')
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 
+app.use(express.static('public'))
 app.use('/', router)
 
 const port = process.env.PORT || 3000
