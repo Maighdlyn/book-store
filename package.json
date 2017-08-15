@@ -24,6 +24,7 @@
     "express": "^4.15.4",
     "materialize-css": "^0.100.1",
     "nodemon": "^1.11.0",
+    "pg-promise": "^6.3.8",
     "pgpromise": "^0.1.1",
     "postgresql": "0.0.1"
   }
