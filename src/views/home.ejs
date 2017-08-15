@@ -4,9 +4,9 @@
 
 <% books.forEach((book) => { %>
   <div class="row">
-    <p><%= book.title %></p>
+    <a href="/book/<%= book.id %>"><p><%= book.title %></p></a>
     <p><%= book.author %></p>
-    <p><%= book.genre %></p>
+    <p><%= book.genre.replace("_", " ") %></p>
     <p><%= book.pages %></p>
     <a href='/delete/<%= book.id %>'><button>delete</button></a>
   </div>
