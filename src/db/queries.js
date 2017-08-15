@@ -17,5 +17,6 @@ const deleteBook = (id) => {
 
 
 module.exports = {
-  getAllBooks
+  getAllBooks,
+  deleteBook
 }

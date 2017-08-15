@@ -1,11 +1,13 @@
+<%- include navbar.ejs %>
+
 <p>Book Store</p>
 
 <% books.forEach((book) => { %>
-  <div data-bookid="<%= book.id %>">
+  <div>
     <p><%= book.title %></p>
     <p><%= book.author %></p>
     <p><%= book.genre %></p>
     <p><%= book.pages %></p>
-    <a href='#'><button>delete</button></a>
+    <a href='/delete/<%= book.id %>'><button>delete</button></a>
   </div>
 <% })%>
